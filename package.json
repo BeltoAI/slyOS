@@ -1,0 +1,16 @@
+{
+  "name": "slyos-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "local": "node server.js",
+    "dev": "vercel dev --listen 3000 --local-config vercel.dev.json",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0",
+    "vercel": "^37.12.1"
+  }
+}

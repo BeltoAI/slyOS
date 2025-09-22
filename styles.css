@@ -1,0 +1,60 @@
+:root{
+  --bg:#0a0b0e;
+  --panel:rgba(255,255,255,.04);
+  --border:rgba(255,255,255,.10);
+  --ink:#e7eaf5;
+  --muted:#9fa8bf;
+  --grad-a:#ff7a18;
+  --grad-b:#ffb800;
+  --grad-c:#ff3d81;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background:var(--bg);
+  color:var(--ink);
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+.section{padding:54px 0}
+.rule{height:1px;background:rgba(255,255,255,.08);margin:10px 0 22px}
+.grad{background:linear-gradient(120deg,var(--grad-a),var(--grad-b),var(--grad-c));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:#fff}
+.btn.primary{border-color:rgba(255,184,0,.3);background:linear-gradient(180deg,rgba(255,184,0,.18),rgba(255,255,255,.04))}
+.btn.primary.prominent{box-shadow:0 10px 28px -10px rgba(255,184,0,.3)}
+.card{border:1px solid var(--border);border-radius:18px;background:var(--panel)}
+.centerStat{text-align:center}
+.centerStat .num{font-weight:800;font-size:40px;letter-spacing:-.02em}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:920px){.grid4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.grid4{grid-template-columns:1fr}}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);font-size:12px;color:#ddd}
+.tablecmp table{width:100%;border-collapse:separate;border-spacing:0 10px}
+.tablecmp td,.tablecmp th{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.06)}
+.tablecmp thead th{color:#cfd6e6;text-align:left}
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:920px){.mgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.mgrid{grid-template-columns:1fr}}
+.mcard{border:1px solid var(--border);border-radius:16px;background:rgba(255,255,255,.02);padding:16px}
+.wgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:920px){.wgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.wgrid{grid-template-columns:1fr}}
+.wtile{border:1px solid var(--border);border-radius:16px;background:rgba(255,255,255,.02);padding:16px}
+.pricing{padding:16px;display:grid;gap:16px}
+.pricing .controls{display:flex;justify-content:space-between;align-items:end}
+.range{width:280px}
+.totals{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.totals .box{border:1px solid var(--border);border-radius:16px;background:rgba(255,255,255,.02);padding:12px;text-align:center}
+.totals .num{font-weight:700}
+.saveBar{height:6px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden}
+.saveBar .fill{height:100%;width:0;background:linear-gradient(90deg,#1a1f2b,var(--grad-b));transition:width .4s ease}
+.bg-layer{position:fixed;inset:0;z-index:-1}
+.nav .logo{display:flex;align-items:center;gap:10px}
+.nav .logo img{width:26px;height:26px;object-fit:contain;border-radius:6px;filter:drop-shadow(0 0 10px rgba(255,184,0,.45))}
+.lede{color:#cfd6e6}
+.subtle{color:#9fa8bf;font-size:14px}
+.faq details{margin:10px 0;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:10px;background:rgba(255,255,255,.02)}
+.faq summary{cursor:pointer;font-weight:600}
